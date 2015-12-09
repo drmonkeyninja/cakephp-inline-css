@@ -1,0 +1,20 @@
+{
+    "name": "drmonkeyninja/cakephp-inline-css",
+    "description": "CakePHP inline CSS plugin",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "css", "helper"],
+    "homepage": "https://github.com/drmonkeyninja/cakephp-inline-css",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Carter",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "tijsverkoyen/css-to-inline-styles": "^1.5"
+    },
+    "extra": {
+        "installer-name": "InlineCss"
+    }
+}
