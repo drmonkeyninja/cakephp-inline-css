@@ -8,13 +8,11 @@
 
 ## Installation
 
-This plugin can be installed using Composer:-
+This plugin should be installed using Composer:-
 
 ```
-composer require drmonkeyninja/cakephp-address
+composer require drmonkeyninja/cakephp-inline-css
 ```
-
-Alternatively copy the plugin to your app/Plugin directory and rename the plugin's directory 'InlineCss'.
 
 Then add the following line to your bootstrap.php to load the plugin.
 
