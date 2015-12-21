@@ -27,7 +27,7 @@ matrix:
 before_script:
   - git clone https://github.com/FriendsOfCake/travis.git --depth 1 ../travis
   - ../travis/before_script.sh
-  - cd ../cakephp/app && echo "require APP . '..' . DS . 'Vendor' . DS . 'autoload.php';" >> Config/bootstrap.php
+  - echo "require APP . 'Vendor' . DS . 'autoload.php';" >> ../cakephp/app/Config/bootstrap.php
 
 script:
   - ../travis/script.sh
