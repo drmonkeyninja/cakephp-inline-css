@@ -13,7 +13,7 @@ This plugin provides a CakePHP helper that uses [CssToInlineStyles](https://gith
 This plugin should be installed using Composer:-
 
 ```
-composer require drmonkeyninja/cakephp-inline-css
+composer require drmonkeyninja/cakephp-inline-css:2.0.*
 ```
 
 Then add the following line to your bootstrap.php to load the plugin.
