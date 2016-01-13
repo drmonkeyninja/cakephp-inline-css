@@ -19,7 +19,7 @@ composer require drmonkeyninja/cakephp-inline-css:2.0.*
 Then add the following line to your bootstrap.php to load the plugin.
 
 ```php
-CakePlugin::load('InlineCss');
+CakePlugin::load('InlineCss.InlineCss');
 ```
 
 ## Usage
