@@ -30,7 +30,7 @@ To use this plugin you want to load the `InlineCss` helper to use with your emai
 $Email = new CakeEmail();
 $Email->template('welcome', 'fancy')
     ->emailFormat('html')
-    ->helpers(array('InlineCss'))
+    ->helpers(array('InlineCss.InlineCss'))
     ->to('bob@example.com')
     ->from('app@domain.com')
     ->send();
