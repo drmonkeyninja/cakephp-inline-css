@@ -2,6 +2,7 @@
 
 namespace InlineCss\View\Helper;
 
+use Cake\View\Helper;
 use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 
 class InlineCssHelper extends Helper
