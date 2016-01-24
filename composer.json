@@ -14,7 +14,15 @@
     "require": {
         "tijsverkoyen/css-to-inline-styles": "^1.5"
     },
-    "extra": {
-        "installer-name": "InlineCss"
+    "autoload": {
+        "psr-4": {
+            "InlineCss\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+            "InlineCss\\Test\\": "tests"
+        }
     }
 }
