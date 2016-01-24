@@ -5,7 +5,7 @@ namespace InlineCss\TestCase\View\Helper;
 use Cake\TestSuite\TestCase;
 use Cake\Network\Request;
 use Cake\View\View;
-use InlineCss\View\Helper;
+use InlineCss\View\Helper\InlineCssHelper;
 
 class InlineCssHelperTest extends TestCase
 {
