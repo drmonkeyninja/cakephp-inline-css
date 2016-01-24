@@ -12,6 +12,7 @@
         }
     ],
     "require": {
+        "cakephp/cakephp": "~3.0",
         "tijsverkoyen/css-to-inline-styles": "^1.5"
     },
     "autoload": {
