@@ -15,6 +15,12 @@ class InlineCssHelper extends AppHelper {
 
 		$content = $this->_View->Blocks->get('content');
 
+		// We only want to apply inline CSS to HTML emails, so first check if
+		// the content is HTML before proceeding.
+		if ($this->isHtml($content) === false) {
+			return;
+		}
+
 		if (!isset($this->InlineCss)) {
 			$this->InlineCss = new CssToInlineStyles();
 		}
