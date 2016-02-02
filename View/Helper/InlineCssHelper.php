@@ -29,4 +29,14 @@ class InlineCssHelper extends AppHelper {
 		return;
 	}
 
+/**
+ * Checks if a string contains HTML or not.
+ *
+ * @param string $str String content
+ * @return bool
+ */
+	public function isHtml($str) {
+		return $str !== strip_tags($str);
+	}
+
 }
