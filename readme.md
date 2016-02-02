@@ -1,6 +1,6 @@
 # CakePHP Inline CSS
 
-[![License](https://poser.pugx.org/drmonkeyninja/cakephp-inline-css/license.svg)](https://packagist.org/packages/drmonkeyninja/cakephp-inline-css) [![Build Status](https://travis-ci.org/drmonkeyninja/cakephp-inline-css.svg)](https://travis-ci.org/drmonkeyninja/cakephp-inline-css)
+[![License](https://poser.pugx.org/drmonkeyninja/cakephp-inline-css/license.svg)](https://packagist.org/packages/drmonkeyninja/cakephp-inline-css) [![Build Status](https://travis-ci.org/drmonkeyninja/cakephp-inline-css.svg?branch=master)](https://travis-ci.org/drmonkeyninja/cakephp-inline-css)
 
 This plugin provides a CakePHP helper that uses [CssToInlineStyles](https://github.com/tijsverkoyen/CssToInlineStyles) to convert HTML style blocks to inline CSS on a View template. Its intended use is with generating email templates where many email clients often require styles applied directly to the elements.
 
@@ -30,7 +30,7 @@ To use this plugin you want to load the `InlineCss` helper to use with your emai
 $Email = new CakeEmail();
 $Email->template('welcome', 'fancy')
     ->emailFormat('html')
-    ->helpers(array('InlineCss'))
+    ->helpers(array('InlineCss.InlineCss'))
     ->to('bob@example.com')
     ->from('app@domain.com')
     ->send();
