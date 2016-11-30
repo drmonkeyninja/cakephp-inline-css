@@ -1,5 +1,4 @@
 <?php
-
 namespace InlineCss\View\Helper;
 
 use Cake\View\Helper;
@@ -11,12 +10,11 @@ class InlineCssHelper extends Helper
     /**
      * After layout logic.
      *
-     * @param string $layoutFile
+     * @param \Cake\Event\Event $event Event
+     * @param string $layoutFile Layout filename
      */
-    public function afterLayout($layoutFile)
+    public function afterLayout(\Cake\Event\Event $event, $layoutFile)
     {
-        parent::afterLayout($layoutFile);
-
         $content = $this->_View->Blocks->get('content');
 
         if (!isset($this->InlineCss)) {
