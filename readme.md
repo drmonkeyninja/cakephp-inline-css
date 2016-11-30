@@ -6,20 +6,20 @@ This plugin provides a CakePHP helper that uses [CssToInlineStyles](https://gith
 
 ## Requirements
 
-* CakePHP 2.x
+* CakePHP 3.x
 
 ## Installation
 
 This plugin should be installed using Composer:-
 
 ```
-composer require drmonkeyninja/cakephp-inline-css:2.0.*
+composer require drmonkeyninja/cakephp-inline-css:3.0.*
 ```
 
 Then add the following line to your bootstrap.php to load the plugin.
 
 ```php
-CakePlugin::load('InlineCss.InlineCss');
+Plugin::load('InlineCss');
 ```
 
 ## Usage
@@ -27,10 +27,10 @@ CakePlugin::load('InlineCss.InlineCss');
 To use this plugin you want to load the `InlineCss` helper to use with your email's HTML template:-
 
 ```php
-$Email = new CakeEmail();
-$Email->template('welcome', 'fancy')
+$email = new Email();
+$email->template('welcome', 'fancy')
     ->emailFormat('html')
-    ->helpers(array('InlineCss.InlineCss'))
+    ->helpers(['InlineCss.InlineCss'])
     ->to('bob@example.com')
     ->from('app@domain.com')
     ->send();
@@ -53,4 +53,4 @@ It will be rendered as:-
 
 This makes generating HTML emails a lot simpler as you can write your CSS in a more DRY approach.
 
-I recommend you look consider deferring the sending of emails using something like the excellent [Queue plugin](https://github.com/dereuromark/cakephp-queue/tree/2.x) to improve your app's response time for users when using this plugin.
+I recommend you look consider deferring the sending of emails using something like the excellent [Queue plugin](https://github.com/dereuromark/cakephp-queue) to improve your app's response time for users when using this plugin.
